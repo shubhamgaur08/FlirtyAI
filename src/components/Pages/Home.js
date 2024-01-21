@@ -50,7 +50,7 @@ function Home() {
       
       <form onSubmit={handleSubmit} className="form">
       
-        <h2 id="title">FLIRT AND FUN WITH A.I</h2>
+        <h3 id="title">FLIRT AND FUN WITH A.I</h3>
             <h1 className="typewriter">
               <Typewriter
                 options={{
