@@ -1,13 +1,29 @@
 .caption-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 10px;
-    margin:20px
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ flex-grow:initial;
+height: 100%;
+
+    
+    
+   
+    
 
     
     
   
 }
+ @media (min-width: 600px) {
+ .caption-container {
+ 
+   flex-wrap: wrap;
+ flex-grow:initial;
+ flex-flow: row wrap;
+ }
+ }
 .selector{
   display: flex;
   flex-direction: row;
@@ -66,6 +82,8 @@
     
     }
 
+    
+
     @media (max-width: 768px) {
     .form {
         width: 90%;
@@ -112,6 +130,31 @@
 .header h1{
    margin-bottom: 20px;
 }
-#outlined-required{
-  
+
+
+.input {
+  width: 100%;
+  max-width: 300px;
+  height: 55px;
+  padding: 12px;
+  margin: 5px 0;
+  font-size: 16px;
+  border-radius: 15px;
+  border: 1.5px solid lightgrey; ;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+}
+
+.input:hover {
+  border: 2px solid rgb(234, 209, 209);
+  box-shadow: 0px 0px 20px -17px;
+}
+
+.input:active {
+  transform: scale(0.95);
+}
+
+.input:focus {
+  border: 2px solid rgb(125, 124, 124);
 }

@@ -21,7 +21,7 @@ function Home() {
     // Perform your POST request with the word data
     // using fetch or any other HTTP library
     console.log(JSON.stringify({ word}))
-    fetch('https://flirty-bear-backend.vercel.app/generate-lines', {
+    fetch('http://localhost:5000/Generate-Lines', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -65,18 +65,31 @@ function Home() {
               />
             </h1>
             <img className='image' src={login} alt="image" />
-      <TextField
+      {/* <TextField
           required
-          id="outlined-required"
+          className='inputGroup'
+          
           label="Describe The Person Here"
           defaultValue="love"
           type="text"
           value={word}
           multiline
           color='secondary'
-          sx={{ m: 1, minWidth: 260 }}
+          sx={{ m: 1, minWidth: 260,borderRadius: 10,borderColor: 'success' }}
            onChange={(event) => setWord(event.target.value)}
-        />
+        /> */}
+        <input placeholder="Describe Your Crush Here..💕" type="text" name="text"required
+          className='input'
+          
+          
+          defaultValue="love"
+          
+          value={word}
+
+        
+          
+          
+           onChange={(event) => setWord(event.target.value)} ></input>
        
       <div className='selector'>
       <Select
@@ -87,7 +100,7 @@ function Home() {
         label="tone"
         color='secondary'
         onChange={(event) => setTone(event.target.value)}
-        sx={{ m:0.5, minWidth: 50 }} size="small"
+        sx={{ m:0.5, minWidth: 50,borderRadius: 4 }} size="small"
       >
         
     
@@ -103,7 +116,7 @@ function Home() {
         label="gender"
         color='secondary'
         onChange={(event) => setGender(event.target.value)}
-        sx={{ m:0.5, minWidth: 50 }} size="small"
+        sx={{ m:0.5, minWidth: 50,borderRadius: 4  }} size="small"
       >
         
     
@@ -120,7 +133,7 @@ function Home() {
         label="Language"
         color='secondary'
         onChange={(event) => setLang(event.target.value)}
-        sx={{ m:0.5,  minWidth: 50 }} size="small"
+        sx={{ m:0.5,  minWidth: 50,borderRadius: 4  }} size="small"
       >
         
     

@@ -36,6 +36,19 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
+                to="/ChatSuggest"
+                
+                
+          
+                className="nav-links"
+                onClick={handleClick}
+              >
+                ChatSuggest
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
                 to="/about"
                 
                 className="nav-links"

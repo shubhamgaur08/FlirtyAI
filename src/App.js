@@ -7,6 +7,7 @@ import  About  from "./components/Pages/About";
 import { Contact } from "./components/Pages/Contact";
 
 import Footer from "./components/Footer";
+import ChatSuggest from "./components/Pages/ChatSuggest";
 function App() {
   return (
     <>
@@ -17,7 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-           
+           <Route path="/Chatsuggest" element={<ChatSuggest />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
 
