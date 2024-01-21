@@ -24,7 +24,7 @@ function ChatSuggest() {
       formData.append('ask', ask);
 
 
-      fetch('http://localhost:5000/Chat', {
+      fetch('https://flirty-bear-backend.vercel.app/Chat', {
         method: 'POST',
         body: formData,
       })

@@ -21,7 +21,7 @@ function Home() {
     // Perform your POST request with the word data
     // using fetch or any other HTTP library
     console.log(JSON.stringify({ word}))
-    fetch('http://localhost:5000/Generate-Lines', {
+    fetch('https://flirty-bear-backend.vercel.app/Generate-Lines', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
