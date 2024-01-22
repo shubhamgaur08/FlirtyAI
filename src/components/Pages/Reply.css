@@ -4,7 +4,7 @@
    
     /* max-width: 80vw;
     min-height: 20vh; */
-    height: 150px;
+    height: 200px;
     width: 300px;
     margin: 5px;
 
@@ -42,10 +42,11 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 transform: translateY(0);
 }
 #copy{
-    margin-top: 1px;
+    margin-top: 10px;
     font-weight: bold;
     background: linear-gradient(to right, #ffbf00, #e94898);
     border-radius: 42px;
+  
     
     }
 
