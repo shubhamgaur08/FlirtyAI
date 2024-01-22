@@ -6,10 +6,10 @@ export default function Reply({ text }) {
  
 text = text.slice(3);
   return (
-    <div className="cap-container">
+    <div className="reply-container">
     <p
       
-      className="Caption" id="Caption"
+      className="replytion" id="replytion"
       
     >
       {text}

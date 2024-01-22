@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import img from './images/p13.png'
 import './ChatSuggest.css'
 import Reply from './Reply';
 import Button from '@mui/material/Button';
@@ -54,7 +54,9 @@ const VisuallyHiddenInput = styled('input')({
 
   return (
     <div>
+      
       <div className='image-upload-container'>
+        <span className='title1'>Let The  <span className='title2'>A.I</span> Help What To Reply</span>  
       <form onSubmit={handleSubmit}>
       <Button className='upload-button' type="submit"  id="upload-button" component="label" variant="contained" onChange={handleFileInput}>
       
@@ -70,6 +72,7 @@ const VisuallyHiddenInput = styled('input')({
           />
         )}
       </div>
+      <img className="img" id='img' src={img} alt="chat" />
         {/* <TextField
          
           id="outlined-required"
@@ -82,7 +85,7 @@ const VisuallyHiddenInput = styled('input')({
           sx={{ m: 1, minWidth: 260 }}
            onChange={(event) => setAsk(event.target.value)}
         /> */}
-        <input placeholder="Describe Your Crush Here..💕" type="text" name="text"required
+        <input placeholder="what do you want..💕" type="text" name="text"required
           className='input'
           
           

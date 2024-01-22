@@ -1,12 +1,11 @@
 
-.cap-container {
+.reply-container {
     
-    
-    width: auto;
+   
     /* max-width: 80vw;
     min-height: 20vh; */
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 300px;
     margin: 5px;
 
    
@@ -31,13 +30,13 @@ color: #141313;
  font-family: 'Poppins', sans-serif;
 }
 
-.cap-container:hover {
+.reply-container:hover {
 
 box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 transform: translateY(-2px);
 }
 
-.cap-container:active {
+.reply-container:active {
 background-color: #d8d8d8;
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 transform: translateY(0);
@@ -46,14 +45,14 @@ transform: translateY(0);
     margin-top: 1px;
     font-weight: bold;
     background: linear-gradient(to right, #ffbf00, #e94898);
-    border-radius: 12px;
+    border-radius: 42px;
     
     }
 
 #copy:hover{
     background: linear-gradient(to right, #ffbf00, #ff0080);
 }
-#Caption{
+#replytion{
     /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     font-weight: bold;

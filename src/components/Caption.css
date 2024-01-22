@@ -2,12 +2,13 @@
 .cap-container {
     
     
-    width: auto;
+    
     /* max-width: 80vw;
     min-height: 20vh; */
-    height: 250px;
-    width: 250px;
-    margin: 10px;
+    height: 260px;
+    
+    max-width:340px ;
+    margin: 10px 15px;
 
    
     
@@ -23,7 +24,7 @@
 cursor: pointer;
 padding: 8px 12px;
 /* background-color: #6adee8; */
-border-radius: 14px;
+border-radius: 40px;
 background: #ff8080;
 box-shadow: inset 10px -10px 20px #e67373,
             inset -10px 10px 20px #ff8d8d;
@@ -43,10 +44,10 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 transform: translateY(0);
 }
 #copy{
-    margin-top: 30px;
+    
     font-weight: bold;
     background: linear-gradient(to right, #ffbf00, #e94898);
-    border-radius: 12px;
+    border-radius: 40px;
     
     }
 
