@@ -93,7 +93,7 @@ const VisuallyHiddenInput = styled('input')({
           sx={{ m: 1, minWidth: 260 }}
            onChange={(event) => setAsk(event.target.value)}
         /> */}
-        <input placeholder="what do you want..💕" type="text" name="text"required
+        <input placeholder="Type Some Info About Chat..💕" type="text" name="text"required
           className='input'
           
           
