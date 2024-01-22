@@ -14,16 +14,20 @@ function ChatSuggest() {
   const [tone, setTone] = useState('flirty');
   const [gender, setGender] = useState('girl');
   const [lang, setLang] = useState('english');
+  const [im, setIm] = useState(true);
   
   const handleFileInput = (e) => {
     setSelectedFile(e.target.files[0]);
+    setIm(false);
   };
 
   const handleSubmit = (e) => {
     setLoading(true)
     setReply([]);
+    
     e.preventDefault();
     if (selectedFile) {
+      
       const formData = new FormData();
       formData.append('image', selectedFile);
       formData.append('ask', ask);
@@ -66,15 +70,15 @@ const VisuallyHiddenInput = styled('input')({
       <div className='image-upload-container'>
         <span className='title1'>Let The  <span className='title2'>A.I</span> Help What To Reply</span>  
       <form onSubmit={handleSubmit}>
-      <Button className='upload-button' type="submit"  id="upload-button" component="label" variant="contained" onChange={handleFileInput}>
+      <Button required className='upload-button' type="submit"  id="upload-button" component="label" variant="contained" onChange={handleFileInput}>
       
       <i class="fa-solid fa-cloud-arrow-up" ></i>
-      Upload Screenshot
+      Upload Chat Screenshot
       <VisuallyHiddenInput type="file" />
     </Button>
         <div className='image-preview'>
         {selectedFile && (
-          <img className='image'
+          <img  className='image'
             src={URL.createObjectURL(selectedFile)}
             alt="Selected"
           />
@@ -157,7 +161,7 @@ const VisuallyHiddenInput = styled('input')({
         
       </Select>
       </div>
-        <Button id='generate' type="submit" variant="contained">{loading ? 'Generating...' : `Generate Replies`}</Button>
+        <Button disabled={im} id='generate' type="submit" variant="contained">{loading ? 'Generating...' : `Generate Replies`}</Button>
       </form>
       <div className="caption-container">
       {reply.map((cap, index) => (

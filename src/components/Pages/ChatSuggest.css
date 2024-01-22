@@ -39,6 +39,7 @@
   }
 
   #upload-button{
+    color: #b343b9;
    
     font-weight: bold;
     background: linear-gradient(to right, #ffbf00, #e94898);
